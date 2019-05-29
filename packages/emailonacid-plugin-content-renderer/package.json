@@ -1,6 +1,6 @@
 {
   "name": "emailonacid-plugin-content-renderer",
-  "version": "3.9.2",
+  "version": "3.9.3",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "MIT",

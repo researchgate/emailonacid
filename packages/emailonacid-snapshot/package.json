@@ -1,6 +1,6 @@
 {
   "name": "emailonacid-snapshot",
-  "version": "3.9.2",
+  "version": "3.9.3",
   "description": "Mails visual regression tooling via Email on Acid service",
   "main": "index.js",
   "types": "types/emailonacid-snapshot.d.ts",
