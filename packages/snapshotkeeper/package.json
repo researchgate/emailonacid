@@ -4,9 +4,6 @@
   "engines": {
     "node": ">=10"
   },
-  "publishConfig": {
-    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
-  },
   "bin": {
     "snapshotkeeper-prepare": "./bin/snapshotkeeper-prepare.js",
     "snapshotkeeper-upload": "./bin/snapshotkeeper-upload.js"

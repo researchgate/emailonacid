@@ -4,9 +4,6 @@
   "engines": {
     "node": ">=10"
   },
-  "publishConfig": {
-    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
-  },
   "bin": {
     "emailonacid-proxy": "./bin/emailonacid-proxy.js"
   },

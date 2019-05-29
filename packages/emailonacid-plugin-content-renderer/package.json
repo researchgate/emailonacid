@@ -4,9 +4,6 @@
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
-  },
   "engines": {
     "node": ">=10"
   },
