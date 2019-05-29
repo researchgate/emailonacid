@@ -1,0 +1,29 @@
+{
+  "name": "emailonacid-client",
+  "version": "3.9.2",
+  "description": "Client for EmailOnAcid REST API Service",
+  "main": "index.js",
+  "types": "types/emailonacid-client.d.ts",
+  "files": [
+    "index.js",
+    "targets.js",
+    "lib/",
+    "types/",
+    "readme.md"
+  ],
+  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "camelcase-keys": "^5.0.0",
+    "cross-fetch": "^3.0.1",
+    "invariant": "^2.2.4",
+    "lodash.merge": "^4.6.1",
+    "snakecase-keys": "^2.1.0"
+  }
+}

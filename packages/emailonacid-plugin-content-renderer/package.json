@@ -1,0 +1,16 @@
+{
+  "name": "emailonacid-plugin-content-renderer",
+  "version": "3.9.2",
+  "main": "index.js",
+  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4"
+  }
+}

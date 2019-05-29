@@ -1,0 +1,43 @@
+{
+  "name": "emailonacid-snapshot",
+  "version": "3.9.2",
+  "description": "Mails visual regression tooling via Email on Acid service",
+  "main": "index.js",
+  "types": "types/emailonacid-snapshot.d.ts",
+  "files": [
+    "lib/",
+    "types/",
+    "index.js",
+    "config.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "emailonacid-client": "^3.9.2",
+    "emailonacid-plugin-content-cropping": "^3.9.2",
+    "emailonacid-plugin-content-renderer": "^3.9.2",
+    "emailonacid-plugin-local-copy": "^3.9.2",
+    "emailonacid-plugin-thread-busting": "^3.9.2",
+    "cosmiconfig": "^5.1.0",
+    "cross-fetch": "^3.0.1",
+    "invariant": "^2.2.4",
+    "jimp": "^0.6.0",
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.mergewith": "^4.6.1",
+    "signale": "^1.3.0"
+  },
+  "devDependencies": {
+    "emailonacid-emulator": "^3.9.2"
+  },
+  "peerDependencies": {
+    "jest": ">=22"
+  }
+}

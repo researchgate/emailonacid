@@ -1,0 +1,16 @@
+{
+  "name": "emailonacid-plugin-statsd-reporter",
+  "version": "3.9.2",
+  "main": "index.js",
+  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "hot-shots": "^6.1.1"
+  }
+}

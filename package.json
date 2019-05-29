@@ -1,0 +1,46 @@
+{
+  "name": "emailonacid",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "spire lint",
+    "test": "spire test",
+    "release": "spire release"
+  },
+  "devDependencies": {
+    "@researchgate/prettier-config": "^1.2.0",
+    "@researchgate/spire-config": "^1.2.1",
+    "spire": "^1.7.0",
+    "spire-plugin-lerna-release": "^1.7.0",
+    "jest-image-snapshot": "^2.8.1"
+  },
+  "jest": {
+    "preset": "@researchgate/jest-preset",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/.setup.jest.js"
+    ]
+  },
+  "spire": {
+    "extends": [
+      [
+        "@researchgate/spire-config",
+        {
+          "eslint": "node"
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "spire-plugin-lerna-release",
+        {
+          "githubRelease": false
+        }
+      ]
+    ]
+  }
+}

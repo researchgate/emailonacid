@@ -1,0 +1,19 @@
+{
+  "name": "emailonacid-proxy",
+  "version": "3.9.2",
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
+  },
+  "bin": {
+    "emailonacid-proxy": "./bin/emailonacid-proxy.js"
+  },
+  "dependencies": {
+    "async-sema": "^3.0.0",
+    "commander": "^2.19.0",
+    "cross-fetch": "^3.0.1",
+    "micro": "^9.3.3"
+  }
+}

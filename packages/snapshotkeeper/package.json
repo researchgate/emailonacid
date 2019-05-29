@@ -1,0 +1,21 @@
+{
+  "name": "snapshotkeeper",
+  "version": "3.9.2",
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
+  },
+  "bin": {
+    "snapshotkeeper-prepare": "./bin/snapshotkeeper-prepare.js",
+    "snapshotkeeper-upload": "./bin/snapshotkeeper-upload.js"
+  },
+  "dependencies": {
+    "aggregate-error": "^3.0.0",
+    "cosmiconfig": "^5.1.0",
+    "execa": "^1.0.0",
+    "is-ci": "^2.0.0",
+    "node-fetch": "^2.3.0"
+  }
+}

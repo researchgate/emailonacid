@@ -1,0 +1,5 @@
+{
+  "extends": ["config:base", ":preserveSemverRanges"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "assignees": ["sbekrin", "justinvdm", "Rendez"]
+}

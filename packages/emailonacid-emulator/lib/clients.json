@@ -1,0 +1,568 @@
+{
+  "aol_chr26_win": {
+    "id": "aol_chr26_win",
+    "client": "AOL",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "image_blocking": true,
+    "default": true
+  },
+  "aol_ff21_mac": {
+    "id": "aol_ff21_mac",
+    "client": "AOL",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "default": true
+  },
+  "aol_ff21_win": {
+    "id": "aol_ff21_win",
+    "client": "AOL",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "default": true
+  },
+  "aol_si8_mac": {
+    "id": "aol_si8_mac",
+    "client": "AOL",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Safari",
+    "image_blocking": true,
+    "default": true
+  },
+  "applemail10": {
+    "id": "applemail10",
+    "client": "Apple Mail 10",
+    "os": "OSX 10.10",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "applemail11": {
+    "id": "applemail11",
+    "client": "Apple Mail 11",
+    "os": "OSX 10.11",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "gmail_chr26_mac": {
+    "id": "gmail_chr26_mac",
+    "client": "Gmail",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Chrome",
+    "image_blocking": true,
+    "default": true
+  },
+  "gmail_chr26_win": {
+    "id": "gmail_chr26_win",
+    "client": "Gmail",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "image_blocking": true,
+    "default": true
+  },
+  "gmail_ff21_mac": {
+    "id": "gmail_ff21_mac",
+    "client": "Gmail",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "free": true,
+    "default": true
+  },
+  "gmail_ff21_win": {
+    "id": "gmail_ff21_win",
+    "client": "Gmail",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "free": true,
+    "default": true
+  },
+  "gmail_ie11_win": {
+    "id": "gmail_ie11_win",
+    "client": "Gmail",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "IE 11",
+    "image_blocking": true,
+    "default": true
+  },
+  "gmail_si8_mac": {
+    "id": "gmail_si8_mac",
+    "client": "Gmail",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Safari",
+    "image_blocking": true,
+    "default": true
+  },
+  "gmx_chr26_win": {
+    "id": "gmx_chr26_win",
+    "client": "GMX",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "default": true
+  },
+  "gapps_chr26_win": {
+    "id": "gapps_chr26_win",
+    "client": "Google Apps",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "image_blocking": true,
+    "default": true
+  },
+  "gapps_ff21_win": {
+    "id": "gapps_ff21_win",
+    "client": "Google Apps",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "default": true
+  },
+  "gapps_ie11_win": {
+    "id": "gapps_ie11_win",
+    "client": "Google Apps",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "IE 11",
+    "image_blocking": true,
+    "default": true
+  },
+  "ipadair_10": {
+    "id": "ipadair_10",
+    "client": "iPad Air",
+    "os": "iOS 10",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "ipadmini_10": {
+    "id": "ipadmini_10",
+    "client": "iPad Mini",
+    "os": "iOS 10",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "ipadmini_11": {
+    "id": "ipadmini_11",
+    "client": "iPad Mini",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "ipadpro_11": {
+    "id": "ipadpro_11",
+    "client": "iPad Pro (12.9-inch)",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "ipadpro_10_11": {
+    "id": "ipadpro_10_11",
+    "client": "iPad Pro (10.5-inch)",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "ipadretina_10": {
+    "id": "ipadretina_10",
+    "client": "iPad Retina",
+    "os": "iOS 10",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "ipadretina_11": {
+    "id": "ipadretina_11",
+    "client": "iPad Retina",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphonex_11": {
+    "id": "iphonex_11",
+    "client": "iPhone X",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphonex_12": {
+    "id": "iphonex_12",
+    "client": "iPhone X",
+    "os": "iOS 12",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphone5s_11": {
+    "id": "iphone5s_11",
+    "client": "iPhone 5S",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphone6_gmail": {
+    "id": "iphone6_gmail",
+    "client": "iPhone 6 Gmail",
+    "os": "iOS 10",
+    "category": "Mobile",
+    "default": true
+  },
+  "iphone6p_gmail": {
+    "id": "iphone6p_gmail",
+    "client": "iPhone 6+ Gmail",
+    "os": "iOS 10",
+    "category": "Mobile",
+    "default": true
+  },
+  "iphone7_11": {
+    "id": "iphone7_11",
+    "client": "iPhone 7",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphone8_11": {
+    "id": "iphone8_11",
+    "client": "iPhone 8",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphone8_12": {
+    "id": "iphone8_12",
+    "client": "iPhone 8",
+    "os": "iOS 12",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphone8p_11": {
+    "id": "iphone8p_11",
+    "client": "iPhone 8+",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphone8p_12": {
+    "id": "iphone8p_12",
+    "client": "iPhone 8+",
+    "os": "iOS 12",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphonese_11": {
+    "id": "iphonese_11",
+    "client": "iPhone SE",
+    "os": "iOS 11",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "iphonese_12": {
+    "id": "iphonese_12",
+    "client": "iPhone SE",
+    "os": "iOS 12",
+    "category": "Mobile",
+    "rotate": true,
+    "default": true
+  },
+  "lpe_chr26_win": {
+    "id": "lpe_chr26_win",
+    "client": "Laposte",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "default": true
+  },
+  "notes8": {
+    "id": "notes8",
+    "client": "Lotus Notes 8",
+    "os": "Windows 7",
+    "category": "Application",
+    "default": true
+  },
+  "notes85": {
+    "id": "notes85",
+    "client": "Lotus Notes 8.5",
+    "os": "Windows 7",
+    "category": "Application",
+    "default": true
+  },
+  "o365_chr26_win": {
+    "id": "o365_chr26_win",
+    "client": "Office 365",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "image_blocking": true,
+    "default": true
+  },
+  "o365_ff21_win": {
+    "id": "o365_ff21_win",
+    "client": "Office 365",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "default": true
+  },
+  "o365_ie11_win": {
+    "id": "o365_ie11_win",
+    "client": "Office 365",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "IE 11",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook03": {
+    "id": "outlook03",
+    "client": "Outlook 2003",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "free": true,
+    "default": true
+  },
+  "outlook07": {
+    "id": "outlook07",
+    "client": "Outlook 2007",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook10": {
+    "id": "outlook10",
+    "client": "Outlook 2010",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook10_d125": {
+    "id": "outlook10_d125",
+    "client": "Outlook 2010 (120 dpi)",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "macoutlook11": {
+    "id": "macoutlook11",
+    "client": "Outlook 2011",
+    "os": "OSX 10.8",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook13": {
+    "id": "outlook13",
+    "client": "Outlook 2013",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook13_d125": {
+    "id": "outlook13_d125",
+    "client": "Outlook 2013 (120 dpi)",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "macoutlook16": {
+    "id": "macoutlook16",
+    "client": "Outlook 2016",
+    "os": "OSX 10.8",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook16": {
+    "id": "outlook16",
+    "client": "Outlook 2016",
+    "os": "Windows 7",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook16_win10": {
+    "id": "outlook16_win10",
+    "client": "Outlook 2016",
+    "os": "Windows 10",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "outlook16_win10_125": {
+    "id": "outlook16_win10_125",
+    "client": "Outlook 2016 (120 dpi)",
+    "os": "Windows 10",
+    "category": "Application",
+    "image_blocking": true,
+    "default": true
+  },
+  "ol_chr26_mac": {
+    "id": "ol_chr26_mac",
+    "client": "Outlook.com",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Chrome",
+    "default": true
+  },
+  "ol_ff21_mac": {
+    "id": "ol_ff21_mac",
+    "client": "Outlook.com",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Firefox",
+    "default": true
+  },
+  "ol_ff21_win": {
+    "id": "ol_ff21_win",
+    "client": "Outlook.com",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Firefox",
+    "default": true
+  },
+  "ol_ie11_win": {
+    "id": "ol_ie11_win",
+    "client": "Outlook.com",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "IE 11",
+    "default": true
+  },
+  "ol_si8_mac": {
+    "id": "ol_si8_mac",
+    "client": "Outlook.com",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Safari",
+    "default": true
+  },
+  "android6": {
+    "id": "android6",
+    "client": "Pixel Gmail",
+    "os": "Android 6",
+    "category": "Mobile",
+    "default": true
+  },
+  "android7": {
+    "id": "android7",
+    "client": "Pixel Gmail",
+    "os": "Android 7",
+    "category": "Mobile",
+    "default": true
+  },
+  "android8": {
+    "id": "android8",
+    "client": "Pixel Gmail",
+    "os": "Android 8",
+    "category": "Mobile",
+    "default": true
+  },
+  "samsung_mail": {
+    "id": "samsung_mail",
+    "client": "Samsung Mail",
+    "os": "Android 7",
+    "category": "Mobile",
+    "default": true
+  },
+  "toe_chr26_win": {
+    "id": "toe_chr26_win",
+    "client": "T-Online.de",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "default": true
+  },
+  "tsa_chr26_win": {
+    "id": "tsa_chr26_win",
+    "client": "Telstra/BigPond",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "default": true
+  },
+  "thunderbird13": {
+    "id": "thunderbird13",
+    "client": "Thunderbird",
+    "os": "Windows 7",
+    "category": "Application",
+    "default": true
+  },
+  "wde_chr26_win": {
+    "id": "wde_chr26_win",
+    "client": "Web.de",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "default": true
+  },
+  "yb_chr26_win": {
+    "id": "yb_chr26_win",
+    "client": "Yahoo!",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Chrome",
+    "image_blocking": true,
+    "default": true
+  },
+  "yb_ff21_mac": {
+    "id": "yb_ff21_mac",
+    "client": "Yahoo!",
+    "os": "OSX 10.10",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "default": true
+  },
+  "yb_ff21_win": {
+    "id": "yb_ff21_win",
+    "client": "Yahoo!",
+    "os": "Windows 7",
+    "category": "Web",
+    "browser": "Firefox",
+    "image_blocking": true,
+    "default": true
+  },
+  "yb_si8_mac": {
+    "id": "yb_si8_mac",
+    "client": "Yahoo!",
+    "os": null,
+    "category": "Web",
+    "browser": "Safari",
+    "image_blocking": true,
+    "default": true
+  }
+}
