@@ -13,7 +13,7 @@
     "CHANGELOG.md"
   ],
   "author": "Sergey Bekrin <sergey@bekrin.me>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "publishConfig": {
     "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"
   },

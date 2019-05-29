@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "author": "Sergey Bekrin <sergey@bekrin.me>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "lint": "spire lint",
     "test": "spire test",
