@@ -4,7 +4,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "UNLICENSED",
   "scripts": {
     "lint": "spire lint",

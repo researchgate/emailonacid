@@ -11,7 +11,7 @@
     "types/",
     "readme.md"
   ],
-  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "UNLICENSED",
   "publishConfig": {
     "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"

@@ -2,7 +2,7 @@
   "name": "emailonacid-plugin-local-copy",
   "version": "3.9.2",
   "main": "index.js",
-  "author": "Sergey Bekrin <sergey.bekrin@researchgate.net>",
+  "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "UNLICENSED",
   "publishConfig": {
     "registry": "https://nexus3.rgoffice.net/repository/npm-internal/"

@@ -29,16 +29,16 @@ API polyfills to be server- & client- side ready.
 
 ```bash
 # yarn
-yarn add email-on-acid-client
+yarn add emailonacid-client
 
 # npm
-npm install --save email-on-acid-client
+npm install --save emailonacid-client
 ```
 
 ## Usage
 
 ```js
-const createClient = require('email-on-acid-client');
+const createClient = require('emailonacid-client');
 
 /**
  * Make sure to catch rejections from client
@@ -85,7 +85,7 @@ Please keep in mind that it's collected on publish step and might be
 out-of-date.
 
 ```js
-const { clients } = require('email-on-acid-client');
+const { clients } = require('emailonacid-client');
 console.log(clients); // <- array with available clients
 ```
 

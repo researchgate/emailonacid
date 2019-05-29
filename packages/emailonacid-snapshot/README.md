@@ -23,10 +23,10 @@ Mail Visual Regression library based on
 
 ```sh
 # yarn
-yarn add --dev jest-emailonacid-snapshot
+yarn add --dev emailonacid-snapshot
 
 # npm
-npm install --save-dev jest-emailonacid-snapshot
+npm install --save-dev emailonacid-snapshot
 ```
 
 2.  Define `process.env.EOA_API_KEY` and `process.env.EOA_ACCOUNT_PASSWORD`
@@ -80,7 +80,7 @@ details.
 ### `createEmail`
 
 ```js
-import { createEmail } from 'jest-emailonacid-snapshot';
+import { createEmail } from 'emailonacid-snapshot';
 ```
 
 Creates new email with default and [global options](#options). Returns email
@@ -89,7 +89,7 @@ instance object.
 ### `configureCreateEmail`
 
 ```js
-import { configureCreateEmail } from 'jest-emailonacid-snapshot';
+import { configureCreateEmail } from 'emailonacid-snapshot';
 ```
 
 Creates new email factory with default, global and provided options. Helpful for
