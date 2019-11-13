@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "get-stdin": "^7.0.0",
-    "jimp": "^0.6.0",
-    "parse5": "^5.1.0"
+    "jimp": "^0.8.5",
+    "parse5": "^5.1.1"
   }
 }

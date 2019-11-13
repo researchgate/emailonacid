@@ -19,6 +19,7 @@ function createServer(handler = serveHandler, prefix = '') {
   async function stop() {
     server.close();
     await new Promise((resolve) => server.once('close', resolve));
+    // eslint-disable-next-line require-atomic-updates
     server = undefined;
   }
 

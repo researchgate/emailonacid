@@ -7,6 +7,7 @@ let config;
 
 async function execGit(...args) {
   if (!config) {
+    // eslint-disable-next-line require-atomic-updates
     config = await resolveConfig();
   }
   return await execa.stdout(

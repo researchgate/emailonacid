@@ -14,6 +14,7 @@ function ContentRendererPlugin({ render = String } = {}) {
         typeof render === 'function',
         `Expected renderer to be a function, received ${typeof render} instead`
       );
+      // eslint-disable-next-line require-atomic-updates
       email.content = await render(email.content);
       invariant(
         typeof email.content === 'string',

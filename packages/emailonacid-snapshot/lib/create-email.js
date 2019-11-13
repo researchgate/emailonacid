@@ -65,6 +65,7 @@ function configureCreateEmail(configuredOptions = {}) {
       logger.error(error);
     }
     if (process.env.EOA_CLIENTS) process.env.EOA_CLIENTS = String(knownClients);
+    // eslint-disable-next-line require-atomic-updates
     options.clients = knownClients;
     // Run `prepare` plugins
     const email = { content, subject };
@@ -76,11 +77,14 @@ function configureCreateEmail(configuredOptions = {}) {
     }
     // Create a new test on EoA side and poll the results
     logger.debug('creating an EoA test');
+    // eslint-disable-next-line require-atomic-updates
     context.test = await client.createTest({
       html: context.email.content,
       subject: context.email.subject,
     });
+    // eslint-disable-next-line require-atomic-updates
     context.stream = createResultStream(context, options);
+    // eslint-disable-next-line require-atomic-updates
     context.stopPolling = context.stream.stopPolling.bind(context.stream);
     // Track complete result timings
     options.clients.forEach((clientId) =>

@@ -19,17 +19,17 @@
   },
   "dependencies": {
     "cosmiconfig": "^5.1.0",
-    "cross-fetch": "^3.0.1",
+    "cross-fetch": "^3.0.4",
     "emailonacid-client": "^3.9.3",
     "emailonacid-plugin-content-cropping": "^3.9.3",
     "emailonacid-plugin-content-renderer": "^3.9.3",
     "emailonacid-plugin-local-copy": "^3.9.3",
     "emailonacid-plugin-thread-busting": "^3.9.3",
     "invariant": "^2.2.4",
-    "jimp": "^0.6.0",
+    "jimp": "^0.8.5",
     "lodash.kebabcase": "^4.1.1",
-    "lodash.mergewith": "^4.6.1",
-    "signale": "^1.3.0"
+    "lodash.mergewith": "^4.6.2",
+    "signale": "^1.4.0"
   },
   "devDependencies": {
     "emailonacid-emulator": "^3.9.3"

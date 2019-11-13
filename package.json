@@ -12,11 +12,10 @@
     "release": "spire release"
   },
   "devDependencies": {
-    "@researchgate/prettier-config": "^1.2.0",
-    "@researchgate/spire-config": "^1.2.1",
-    "spire": "^1.7.0",
-    "spire-plugin-lerna-release": "^1.7.0",
-    "jest-image-snapshot": "^2.8.1"
+    "@researchgate/spire-config": "^1.5.2",
+    "jest-image-snapshot": "^2.11.0",
+    "spire": "^1.7.3",
+    "spire-plugin-lerna-release": "^1.7.3"
   },
   "jest": {
     "preset": "@researchgate/jest-preset",

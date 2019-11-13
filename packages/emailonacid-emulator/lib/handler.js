@@ -26,10 +26,11 @@ const handler = {
     const availableClients = getState().availableClients;
     const desiredClients = await json(req);
     const unknownClients = desiredClients.filter(
-      (client) => !availableClients.hasOwnProperty(client)
+      (client) =>
+        !Object.prototype.hasOwnProperty.call(availableClients, client)
     );
     const knownClients = desiredClients.filter((client) =>
-      availableClients.hasOwnProperty(client)
+      Object.prototype.hasOwnProperty.call(availableClients, client)
     );
     if (unknownClients.length === desiredClients.length) {
       return send(res, 400, new InvalidClientError(unknownClients));
@@ -63,7 +64,8 @@ const handler = {
     if (!subject) return send(res, 400, new NoSubjectError());
     if (!html && !url) return send(res, 400, new NoContentError());
     const unknownClients = clients.filter(
-      (client) => !availableClients.hasOwnProperty(client)
+      (client) =>
+        !Object.prototype.hasOwnProperty.call(availableClients, client)
     );
     if (unknownClients.length)
       return send(res, 400, new InvalidClientError(unknownClients));

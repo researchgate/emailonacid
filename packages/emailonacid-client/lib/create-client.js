@@ -32,18 +32,14 @@ function createApiFetcher(baseApiUrl, apiKey, accountPassword) {
     const data = await response.json();
     if (data.error) {
       throw new Error(
-        `[${data.error.name}] ${data.error.message} (${
-          options.method
-        } ${targetUrl})`
+        `[${data.error.name}] ${data.error.message} (${options.method} ${targetUrl})`
       );
     }
     if (response.ok) {
       return camelCaseKeys(data, { deep: true });
     }
     throw new Error(
-      `[UnknownError] Request has faild without an error message (${
-        options.method
-      } ${targetUrl}).`
+      `[UnknownError] Request has faild without an error message (${options.method} ${targetUrl}).`
     );
   };
 }
