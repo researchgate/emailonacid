@@ -17,10 +17,10 @@ Self-hosted proxy for throttling EoA API requests to 60 per 5 minutes
 
 ```sh
 # yarn
-yarn add emailonacid-proxy
+yarn add @researchgate/emailonacid-proxy
 
 # npm
-npm add --save emailonacid-proxy
+npm add --save @researchgate/emailonacid-proxy
 ```
 
 2. Run the proxy:

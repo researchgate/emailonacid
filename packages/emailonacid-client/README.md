@@ -29,16 +29,16 @@ API polyfills to be server- & client- side ready.
 
 ```bash
 # yarn
-yarn add emailonacid-client
+yarn add @researchgate/emailonacid-client
 
 # npm
-npm install --save emailonacid-client
+npm install --save @researchgate/emailonacid-client
 ```
 
 ## Usage
 
 ```js
-const createClient = require('emailonacid-client');
+const createClient = require('@researchgate/emailonacid-client');
 
 /**
  * Make sure to catch rejections from client
@@ -85,7 +85,7 @@ Please keep in mind that it's collected on publish step and might be
 out-of-date.
 
 ```js
-const { clients } = require('emailonacid-client');
+const { clients } = require('@researchgate/emailonacid-client');
 console.log(clients); // <- array with available clients
 ```
 

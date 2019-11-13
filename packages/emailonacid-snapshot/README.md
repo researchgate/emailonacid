@@ -19,14 +19,14 @@ Mail Visual Regression library based on
 
 ## Quick Start
 
-1.  Install `emailonacid-snapshot` package as devDependency:
+1.  Install `@researchgate/emailonacid-snapshot` package as devDependency:
 
 ```sh
 # yarn
-yarn add --dev emailonacid-snapshot
+yarn add --dev @researchgate/emailonacid-snapshot
 
 # npm
-npm install --save-dev emailonacid-snapshot
+npm install --save-dev @researchgate/emailonacid-snapshot
 ```
 
 2.  Define `process.env.EOA_API_KEY` and `process.env.EOA_ACCOUNT_PASSWORD`
@@ -35,7 +35,7 @@ npm install --save-dev emailonacid-snapshot
 3.  Use `createEmail` with your favorite test runner:
 
 ```js
-const { createEmail } = require('emailonacid-snapshot');
+const { createEmail } = require('@researchgate/emailonacid-snapshot');
 
 async function run() {
   const email = await createEmail('<html><!-- static markup --></html>');
@@ -80,7 +80,7 @@ details.
 ### `createEmail`
 
 ```js
-import { createEmail } from 'emailonacid-snapshot';
+import { createEmail } from '@researchgate/emailonacid-snapshot';
 ```
 
 Creates new email with default and [global options](#options). Returns email
@@ -89,7 +89,7 @@ instance object.
 ### `configureCreateEmail`
 
 ```js
-import { configureCreateEmail } from 'emailonacid-snapshot';
+import { configureCreateEmail } from '@researchgate/emailonacid-snapshot';
 ```
 
 Creates new email factory with default, global and provided options. Helpful for
@@ -99,7 +99,7 @@ different renderers.
 ### `withDefaultPlugins`
 
 ```js
-import { withDefaultPlugins } from 'emailonacid-snapshot/config';
+import { withDefaultPlugins } from '@researchgate/emailonacid-snapshot/config';
 ```
 
 Merges user-provided config with list of default plugins.
@@ -107,7 +107,7 @@ Merges user-provided config with list of default plugins.
 ### `withOverridableClients`
 
 ```js
-import { withOverridableClients } from 'emailonacid-snapshot/config';
+import { withOverridableClients } from '@researchgate/emailonacid-snapshot/config';
 ```
 
 Merges user-provided config with a dynamic list of clients which can be

@@ -14,7 +14,7 @@ environments.
 
 ```sh
 # Install `snapshotkeeper`
-yarn global add snapshotkeeper@3
+yarn global add @researchgate/snapshotkeeper
 
 # Prepare to update flaky snapshots
 yarn snapshotkeeper-prepare
