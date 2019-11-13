@@ -1,5 +1,5 @@
 {
-  "name": "emailonacid-plugin-content-cropping",
+  "name": "@researchgate/emailonacid-plugin-content-cropping",
   "version": "3.9.3",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",

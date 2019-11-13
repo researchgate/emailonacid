@@ -1,5 +1,5 @@
 {
-  "name": "emailonacid-plugin-statsd-reporter",
+  "name": "@researchgate/emailonacid-plugin-statsd-reporter",
   "version": "3.9.3",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",

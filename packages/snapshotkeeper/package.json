@@ -1,5 +1,5 @@
 {
-  "name": "snapshotkeeper",
+  "name": "@researchgate/snapshotkeeper",
   "version": "3.9.3",
   "engines": {
     "node": ">=10"

@@ -1,5 +1,5 @@
 {
-  "name": "emailonacid-client",
+  "name": "@researchgate/emailonacid-client",
   "version": "3.9.3",
   "description": "Client for EmailOnAcid REST API Service",
   "main": "index.js",

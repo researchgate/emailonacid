@@ -1,5 +1,5 @@
 {
-  "name": "emailonacid-plugin-thread-busting",
+  "name": "@researchgate/emailonacid-plugin-thread-busting",
   "version": "3.9.3",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",

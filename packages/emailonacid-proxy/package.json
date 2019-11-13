@@ -1,5 +1,5 @@
 {
-  "name": "emailonacid-proxy",
+  "name": "@researchgate/emailonacid-proxy",
   "version": "3.9.3",
   "engines": {
     "node": ">=10"

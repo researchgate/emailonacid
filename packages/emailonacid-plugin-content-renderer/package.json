@@ -1,5 +1,5 @@
 {
-  "name": "emailonacid-plugin-content-renderer",
+  "name": "@researchgate/emailonacid-plugin-content-renderer",
   "version": "3.9.3",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",
