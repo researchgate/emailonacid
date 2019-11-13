@@ -22,6 +22,11 @@
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "<rootDir>/.setup.jest.js"
+    ],
+    "collectCoverageFrom": [
+      "packages/**/*.js",
+      "!packages/**/*.spec.js",
+      "!**/node_modules/**"
     ]
   },
   "spire": {
