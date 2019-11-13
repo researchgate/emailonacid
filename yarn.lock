@@ -3953,7 +3953,7 @@ execa@^2.0.2:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-execa@^3.2.0:
+execa@^3.0.0, execa@^3.2.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-3.3.0.tgz#7e348eef129a1937f21ecbbd53390942653522c1"
   integrity sha512-j5Vit5WZR/cbHlqU97+qcnw9WHRCIL4V1SVe75VcHcD1JRBdt8fv0zw89b7CQHQdUHTt2VjuhcF5ibAgVOxqpg==
@@ -5992,7 +5992,7 @@ jest-worker@^24.6.0, jest-worker@^24.9.0:
     merge-stream "^2.0.0"
     supports-color "^6.1.0"
 
-jest@>=22, jest@^24.7.0, jest@^24.8.0:
+jest@>=22, jest@^24.8.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-24.9.0.tgz#987d290c05a08b52c56188c1002e368edb007171"
   integrity sha512-YvkBL1Zm7d2B1+h5fHEOdyjCG+sGMz4f8D86/0HiqJ6MB4MnDc8FgP5vdWsGnemOQro7lnYo8UakZ3+5A0jxGw==
@@ -6195,7 +6195,7 @@ left-pad@^1.3.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lerna@^3.13.0, lerna@^3.13.1, lerna@^3.15.0:
+lerna@^3.13.0, lerna@^3.15.0:
   version "3.18.4"
   resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.18.4.tgz#132858cabb8fc8393341ddddbbbd85dd0ca82a79"
   integrity sha512-DiU53cvMxaU07Bj2HwBwUQ2O3c/ORNq/QwKj1vGJH4vSkZSTUxPryp2baSNlt8PmnLNXOVpw0vOTRkEF+6n/cA==
@@ -9646,15 +9646,7 @@ spire-plugin-eslint@^1.8.0:
     eslint-plugin-prettier "^3.1.0"
     execa "^2.0.2"
 
-spire-plugin-jest@^1.7.2:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/spire-plugin-jest/-/spire-plugin-jest-1.7.3.tgz#eb84f78a21cac1a23feade404bc1e47aed40992e"
-  integrity sha512-l7oJ4j6a6qs+ZCqokcN7RsD0XGb4/Ka8ohDw6eVLJ54U9coct3jKSOMiqZ3Qn3snBU4EWJNGXub0n5Ibpg0CcQ==
-  dependencies:
-    execa "^1.0.0"
-    jest "^24.7.0"
-
-spire-plugin-jest@^1.8.0:
+spire-plugin-jest@^1.7.2, spire-plugin-jest@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/spire-plugin-jest/-/spire-plugin-jest-1.8.0.tgz#1f91f06ab3b6504f4636390e92d5a454ae210e56"
   integrity sha512-nxS/qIRLI1+wMHb0SBs8VBtZWMIuDsESZRyPma+xxOgdb0hwuqyHyEaEoGeXUbfyiAWbtY1pLR14IFJ1rfvO2Q==
@@ -9662,14 +9654,7 @@ spire-plugin-jest@^1.8.0:
     execa "^2.0.2"
     jest "^24.8.0"
 
-spire-plugin-lerna-release@^1.4.0:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/spire-plugin-lerna-release/-/spire-plugin-lerna-release-1.7.3.tgz#78db669df65ee2ccf4891ac83335e628de1d3b06"
-  integrity sha512-epBO+GOMnRmxtMY5rIMd1MdvJYrtS4CqMrgEnWtn7pJ9/Z6QYzfDjNI+Td8ifqVmpeIxJCMFEfV46kyAaSZycg==
-  dependencies:
-    lerna "^3.13.1"
-
-spire-plugin-lerna-release@^1.8.0:
+spire-plugin-lerna-release@^1.4.0, spire-plugin-lerna-release@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/spire-plugin-lerna-release/-/spire-plugin-lerna-release-1.8.0.tgz#79004b3031ab5198763321fd5c68979ca6083331"
   integrity sha512-HI8wrsc5VuC4Tos0Df9l5ipAqPcpTtgo0449csKYCX11jRZ1JLeW8OG+Kcaq37joES6a1cryY/Arj8sMcwv0Wg==
