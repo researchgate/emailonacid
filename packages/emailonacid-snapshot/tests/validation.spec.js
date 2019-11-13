@@ -2,7 +2,9 @@
 /* eslint-env jest */
 'use strict';
 
-const { createEmulator } = require('@researchgate/emailonacid-emulator/standalone');
+const {
+  createEmulator,
+} = require('@researchgate/emailonacid-emulator/standalone');
 const { configureCreateEmail } = require('../');
 
 jest.unmock('cross-fetch');
