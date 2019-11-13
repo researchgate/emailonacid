@@ -5,7 +5,7 @@ const { join, relative } = require('path');
 const {
   createEmulator,
   createServer,
-} = require('emailonacid-emulator/standalone');
+} = require('@researchgate/emailonacid-emulator/standalone');
 const { configureCreateEmail } = require('../');
 
 jest.unmock('cross-fetch');

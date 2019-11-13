@@ -1,9 +1,9 @@
 'use strict';
 
-const ThreadBustingPlugin = require('emailonacid-plugin-thread-busting');
-const ContentRendererPlugin = require('emailonacid-plugin-content-renderer');
-const LocalCopyPlugin = require('emailonacid-plugin-local-copy');
-const ContentCroppingPlugin = require('emailonacid-plugin-content-cropping');
+const ThreadBustingPlugin = require('@researchgate/emailonacid-plugin-thread-busting');
+const ContentRendererPlugin = require('@researchgate/emailonacid-plugin-content-renderer');
+const LocalCopyPlugin = require('@researchgate/emailonacid-plugin-local-copy');
+const ContentCroppingPlugin = require('@researchgate/emailonacid-plugin-content-cropping');
 
 function withOverridableClients(config = {}) {
   return Object.assign({}, config, {

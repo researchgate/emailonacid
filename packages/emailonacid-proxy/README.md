@@ -36,7 +36,7 @@ npx emailonacid-proxy
 3. Point EoA client to a new url via `baseApiUrl`:
 
 ```js
-const createClient = require('emailonacid-client');
+const createClient = require('@researchgate/emailonacid-client');
 
 const client = createClient({
   baseApiUrl: '<your proxy address>',
