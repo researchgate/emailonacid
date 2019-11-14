@@ -10,11 +10,9 @@ async function execGit(...args) {
     // eslint-disable-next-line require-atomic-updates
     config = await resolveConfig();
   }
-  return await execa.stdout(
-    'git',
-    args,
-    config.debug ? { stdio: 'inherit' } : undefined
-  );
+  return (
+    await execa('git', args, config.debug ? { stdio: 'inherit' } : undefined)
+  ).stdout;
 }
 
 module.exports = execGit;
