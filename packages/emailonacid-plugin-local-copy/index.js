@@ -17,11 +17,9 @@ function LocalCopyPlugin({
     async prepare({ email, logger }) {
       logger.debug('preparing to send local copy');
       const execOptions = { encoding: 'utf8', cwd: process.cwd() };
-      const currentGitUserEmail = await execa.stdout(
-        'git',
-        ['config', 'user.email'],
-        execOptions
-      );
+      const currentGitUserEmail = (
+        await execa('git', ['config', 'user.email'], execOptions)
+      ).stdout;
       const compiledRecipient = recipient.replace(
         /<currentGitUser>/g,
         currentGitUserEmail
