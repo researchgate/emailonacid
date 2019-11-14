@@ -1,7 +1,7 @@
 'use strict';
 
 const isCI = require('is-ci');
-const cosmiconfig = require('cosmiconfig');
+const { cosmiconfig } = require('cosmiconfig');
 const explorer = cosmiconfig('snapshotkeeper');
 
 async function resolveConfig() {

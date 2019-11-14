@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "aggregate-error": "^3.0.0",
-    "cosmiconfig": "^5.1.0",
+    "cosmiconfig": "^6.0.0",
     "execa": "^1.0.0",
     "is-ci": "^2.0.0",
     "node-fetch": "^2.3.0"
