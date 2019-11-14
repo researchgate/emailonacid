@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "async-sema": "^3.0.0",
-    "commander": "^2.19.0",
+    "commander": "^4.0.0",
     "cross-fetch": "^3.0.1",
     "micro": "^9.3.3"
   }

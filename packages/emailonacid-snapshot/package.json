@@ -23,7 +23,7 @@
     "@researchgate/emailonacid-plugin-content-renderer": "^3.9.3",
     "@researchgate/emailonacid-plugin-local-copy": "^3.9.3",
     "@researchgate/emailonacid-plugin-thread-busting": "^3.9.3",
-    "cosmiconfig": "^5.1.0",
+    "cosmiconfig": "^6.0.0",
     "cross-fetch": "^3.0.4",
     "invariant": "^2.2.4",
     "jimp": "^0.8.5",
