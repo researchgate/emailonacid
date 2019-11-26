@@ -1,6 +1,6 @@
 {
   "name": "@researchgate/emailonacid-plugin-local-copy",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "MIT",

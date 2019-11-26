@@ -1,6 +1,6 @@
 {
   "name": "@researchgate/emailonacid-snapshot",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Mails visual regression tooling via Email on Acid service",
   "main": "index.js",
   "types": "types/emailonacid-snapshot.d.ts",
@@ -18,11 +18,11 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@researchgate/emailonacid-client": "^4.0.0",
-    "@researchgate/emailonacid-plugin-content-cropping": "^4.0.0",
-    "@researchgate/emailonacid-plugin-content-renderer": "^4.0.0",
-    "@researchgate/emailonacid-plugin-local-copy": "^4.0.0",
-    "@researchgate/emailonacid-plugin-thread-busting": "^4.0.0",
+    "@researchgate/emailonacid-client": "^4.0.1",
+    "@researchgate/emailonacid-plugin-content-cropping": "^4.0.1",
+    "@researchgate/emailonacid-plugin-content-renderer": "^4.0.1",
+    "@researchgate/emailonacid-plugin-local-copy": "^4.0.1",
+    "@researchgate/emailonacid-plugin-thread-busting": "^4.0.1",
     "cosmiconfig": "^6.0.0",
     "cross-fetch": "^3.0.4",
     "invariant": "^2.2.4",
@@ -32,7 +32,7 @@
     "signale": "^1.4.0"
   },
   "devDependencies": {
-    "@researchgate/emailonacid-emulator": "^4.0.0"
+    "@researchgate/emailonacid-emulator": "^4.0.1"
   },
   "peerDependencies": {
     "jest": ">=22"

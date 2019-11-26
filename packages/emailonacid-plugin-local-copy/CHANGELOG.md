@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/researchgate/emailonacid/compare/v4.0.0...v4.0.1) (2019-11-26)
+
+**Note:** Version bump only for package
+@researchgate/emailonacid-plugin-local-copy
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [4.0.0](https://github.com/researchgate/emailonacid/compare/v3.9.3...v4.0.0) (2019-11-26)
 
 ### Bug Fixes

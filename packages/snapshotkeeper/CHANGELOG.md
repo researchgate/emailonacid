@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/researchgate/emailonacid/compare/v4.0.0...v4.0.1) (2019-11-26)
+
+### Bug Fixes
+
+- **license:** Correctly set license in repository and packages
+  ([1089a8b](https://github.com/researchgate/emailonacid/commit/1089a8bba0a3e66c6a72c88843c30c58a8f4aebd))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 # [4.0.0](https://github.com/researchgate/emailonacid/compare/v3.9.3...v4.0.0) (2019-11-26)
 
 ### Bug Fixes
