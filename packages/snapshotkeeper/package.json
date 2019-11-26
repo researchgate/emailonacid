@@ -8,6 +8,7 @@
     "snapshotkeeper-prepare": "./bin/snapshotkeeper-prepare.js",
     "snapshotkeeper-upload": "./bin/snapshotkeeper-upload.js"
   },
+  "license": "MIT",
   "dependencies": {
     "aggregate-error": "^3.0.0",
     "cosmiconfig": "^6.0.0",
