@@ -2,11 +2,11 @@
 'use strict';
 
 const { resolve, URL } = require('url');
-const createRateLimit = require('async-sema/rate-limit');
+const { RateLimit } = require('async-sema');
 const fetch = require('cross-fetch');
 
 function createHandler(options) {
-  const limit = createRateLimit(options.requestsPerInterval, {
+  const limit = RateLimit(options.requestsPerInterval, {
     timeUnit: options.interval,
   });
 
