@@ -1,6 +1,6 @@
 {
   "name": "@researchgate/emailonacid-proxy",
-  "version": "3.9.3",
+  "version": "4.0.0",
   "engines": {
     "node": ">=10"
   },
