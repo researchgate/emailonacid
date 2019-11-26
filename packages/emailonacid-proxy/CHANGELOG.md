@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/researchgate/emailonacid/compare/v4.0.1...v4.0.2) (2019-11-26)
+
+### Bug Fixes
+
+- **proxy:** Fix usage of async-sema
+  ([3a3530f](https://github.com/researchgate/emailonacid/commit/3a3530f55760f6da693692e81549df37af26be45))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [4.0.1](https://github.com/researchgate/emailonacid/compare/v4.0.0...v4.0.1) (2019-11-26)
 
 ### Bug Fixes
