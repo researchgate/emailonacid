@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@researchgate/spire-config": "^2.0.0",
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^25.0.0",
     "jest": ">=22",
     "jest-image-snapshot": "^2.11.0",
     "spire": "^1.8.1",
