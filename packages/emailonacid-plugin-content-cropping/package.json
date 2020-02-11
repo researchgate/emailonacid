@@ -1,6 +1,6 @@
 {
   "name": "@researchgate/emailonacid-plugin-content-cropping",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "main": "index.js",
   "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "MIT",

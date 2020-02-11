@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/researchgate/emailonacid/compare/v4.0.2...v4.0.3) (2020-02-11)
+
+### Bug Fixes
+
+- **deps:** update dependency execa to v4
+  ([2096934](https://github.com/researchgate/emailonacid/commit/20969348acf27362d55f32990703c576827806f5))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [4.0.1](https://github.com/researchgate/emailonacid/compare/v4.0.0...v4.0.1) (2019-11-26)
 
 **Note:** Version bump only for package
