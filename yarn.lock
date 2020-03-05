@@ -1711,7 +1711,7 @@
   resolved "https://registry.yarnpkg.com/@researchgate/prettier-config/-/prettier-config-1.3.0.tgz#9ca7a27375c12775768b44ef84130a810fa87af8"
   integrity sha512-MAeLKMyWBqSKB55CLNyvgs+5Zz3nMDQ6thCkVPgjid6k7nRXM/RwIQWU9u15I4Umm87z8HnDZjYLxcSW22Kffw==
 
-"@researchgate/spire-config@^2.0.0":
+"@researchgate/spire-config@2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@researchgate/spire-config/-/spire-config-2.1.1.tgz#1f7b37e5089ea3c2ef2477c8f7f96b11fb5151a7"
   integrity sha512-+zSF7++8gkb/bwNWuiZpVkUP7A5EV46lQ+YmalVgdFNJ9YS/pkeipaUTg9D2zz4UGULaUZOZVa26rF3msS37yg==
@@ -1938,7 +1938,7 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^25.0.0":
+"@types/jest@25.1.3":
   version "25.1.3"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.1.3.tgz#9b0b5addebccfb631175870be8ba62182f1bc35a"
   integrity sha512-jqargqzyJWgWAJCXX96LBGR/Ei7wQcZBvRv0PLEu9ZByMfcs23keUJrKv9FMR6YZf9YCbfqDqgmY+JUBsnqhrg==
@@ -6456,7 +6456,7 @@ jest-haste-map@^25.1.0:
   optionalDependencies:
     fsevents "^2.1.2"
 
-jest-image-snapshot@^2.11.0:
+jest-image-snapshot@2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-2.12.0.tgz#5289438cbdc8f2ed834e798c3503ed7313153df8"
   integrity sha512-hRiy+1Ygv1Of0As9R8M2Q8eTawT9wmmezJKAGfeciZrYllQW5bGL0n6Wgk/J2OG70t5zJr3ZXDx2faui1uGw0g==
@@ -6899,7 +6899,7 @@ jest-worker@^25.1.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@>=22:
+jest@25.1.0:
   version "25.1.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-25.1.0.tgz#b85ef1ddba2fdb00d295deebbd13567106d35be9"
   integrity sha512-FV6jEruneBhokkt9MQk0WUFoNTwnF76CLXtwNMfsc0um0TlB/LG2yxUd0KqaFjEJ9laQmVWQWS0sG/t2GsuI0w==
@@ -7151,7 +7151,7 @@ left-pad@^1.3.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
-lerna@^3.13.0, lerna@^3.15.0:
+lerna@3.20.2, lerna@^3.15.0:
   version "3.20.2"
   resolved "https://registry.yarnpkg.com/lerna/-/lerna-3.20.2.tgz#abf84e73055fe84ee21b46e64baf37b496c24864"
   integrity sha512-bjdL7hPLpU3Y8CBnw/1ys3ynQMUjiK6l9iDWnEGwFtDy48Xh5JboR9ZJwmKGCz9A/sarVVIGwf1tlRNKUG9etA==
@@ -8009,7 +8009,7 @@ merge2@^1.2.3, merge2@^1.3.0:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.3.0.tgz#5b366ee83b2f1582c48f87e47cf1a9352103ca81"
   integrity sha512-2j4DAdlBOkiSZIsaXk4mTE3sRS02yBHAtfy127xRV3bQUFqXkjHCHLW6Scv7DwNRbIWNHH8zpnz9zMaKXIdvYw==
 
-micro-dev@^3.0.0:
+micro-dev@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/micro-dev/-/micro-dev-3.0.0.tgz#cea7ef2b4318765b74004e98ec92ac7e12fcff37"
   integrity sha512-hxI93KdT7Y8utmVn3NsXqMEKOQj0RpHiY1+PW8rtbiDyd3e/D6NN7OEdG8R0uSFI3GuJbkYN76Z2QTZafyfN/w==
@@ -10782,7 +10782,7 @@ spire-plugin-jest@^1.7.2, spire-plugin-jest@^1.8.2:
     execa "^2.0.2"
     jest "^24.8.0"
 
-spire-plugin-lerna-release@^1.4.0, spire-plugin-lerna-release@^1.8.0:
+spire-plugin-lerna-release@1.8.2, spire-plugin-lerna-release@^1.4.0:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/spire-plugin-lerna-release/-/spire-plugin-lerna-release-1.8.2.tgz#1613e6cde022cded4b2d1286b7819aeedb1151b2"
   integrity sha512-BqahKrWweBUNrBX+YpAc6plom5drSxdl4T+EfeDDAtNzA9PH+6eWmv2RD23rCHr8o1FzD6fSHEGqZZOknGtp8A==
@@ -10826,7 +10826,7 @@ spire-plugin-yarn@^1.7.0:
     use-yarn "^2.2.0"
     yarn-deduplicate "^1.1.1"
 
-spire@^1.8.1:
+spire@1.8.3:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/spire/-/spire-1.8.3.tgz#b1928f2abddafcedf73d66283bd5f9bd09d06d52"
   integrity sha512-usw55/3HgFtJxYCeqWpRr+YZKF50ztkSg+lsK5YI1lSiv2eQIQ1i7D2DZqRsQE7Pu0DPStYmcEWKaOp3AkcEOg==
