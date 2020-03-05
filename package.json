@@ -12,12 +12,12 @@
     "release": "spire release"
   },
   "devDependencies": {
-    "@researchgate/spire-config": "2.1.1",
-    "@types/jest": "25.1.3",
-    "jest": "25.1.0",
-    "jest-image-snapshot": "2.12.0",
-    "spire": "1.8.3",
-    "spire-plugin-lerna-release": "1.8.2"
+    "@researchgate/spire-config": "^2.0.0",
+    "@types/jest": "^25.0.0",
+    "jest": ">=22",
+    "jest-image-snapshot": "^2.11.0",
+    "spire": "^1.8.1",
+    "spire-plugin-lerna-release": "^1.8.0"
   },
   "jest": {
     "preset": "@researchgate/jest-preset",
