@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/researchgate/emailonacid/compare/v4.0.3...v4.0.4) (2020-03-24)
+
+### Bug Fixes
+
+- **deps:** update dependency hot-shots to v7
+  ([59cd242](https://github.com/researchgate/emailonacid/commit/59cd24203edcbad017a59dccc5b1b5bd25cc4108))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [4.0.1](https://github.com/researchgate/emailonacid/compare/v4.0.0...v4.0.1) (2019-11-26)
 
 **Note:** Version bump only for package

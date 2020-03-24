@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/researchgate/emailonacid/compare/v4.0.3...v4.0.4) (2020-03-24)
+
+### Reverts
+
+- Revert "chore(deps): pin dependencies"
+  ([bea50e0](https://github.com/researchgate/emailonacid/commit/bea50e08353e8def2773273447973c0d8cac97b7))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [4.0.1](https://github.com/researchgate/emailonacid/compare/v4.0.0...v4.0.1) (2019-11-26)
 
 **Note:** Version bump only for package @researchgate/emailonacid-emulator

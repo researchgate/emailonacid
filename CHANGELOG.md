@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/researchgate/emailonacid/compare/v4.0.3...v4.0.4) (2020-03-24)
+
+### Bug Fixes
+
+- **deps:** update dependency hot-shots to v7
+  ([59cd242](https://github.com/researchgate/emailonacid/commit/59cd24203edcbad017a59dccc5b1b5bd25cc4108))
+
+### Reverts
+
+- Revert "chore(deps): pin dependencies"
+  ([bea50e0](https://github.com/researchgate/emailonacid/commit/bea50e08353e8def2773273447973c0d8cac97b7))
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ## [4.0.3](https://github.com/researchgate/emailonacid/compare/v4.0.2...v4.0.3) (2020-02-11)
 
 ### Bug Fixes
