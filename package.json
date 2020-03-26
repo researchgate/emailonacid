@@ -14,7 +14,7 @@
   "devDependencies": {
     "@researchgate/spire-config": "2.1.4",
     "@types/jest": "25.1.4",
-    "jest": "25.2.2",
+    "jest": "25.2.3",
     "jest-image-snapshot": "3.0.1",
     "spire": "1.8.3",
     "spire-plugin-lerna-release": "1.8.2"
