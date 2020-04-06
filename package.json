@@ -12,7 +12,7 @@
     "release": "spire release"
   },
   "devDependencies": {
-    "@researchgate/spire-config": "2.1.4",
+    "@researchgate/spire-config": "2.1.5",
     "@types/jest": "25.2.1",
     "jest": "25.2.7",
     "jest-image-snapshot": "3.0.1",
