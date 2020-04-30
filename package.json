@@ -17,7 +17,7 @@
     "jest": "25.5.2",
     "jest-image-snapshot": "3.1.0",
     "spire": "1.8.3",
-    "spire-plugin-lerna-release": "1.8.2"
+    "spire-plugin-lerna-release": "2.0.2"
   },
   "jest": {
     "preset": "@researchgate/jest-preset",

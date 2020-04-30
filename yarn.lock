@@ -11162,7 +11162,14 @@ spire-plugin-jest@^1.7.2, spire-plugin-jest@^1.8.2:
     execa "^2.0.2"
     jest "^24.8.0"
 
-spire-plugin-lerna-release@1.8.2, spire-plugin-lerna-release@^1.4.0:
+spire-plugin-lerna-release@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/spire-plugin-lerna-release/-/spire-plugin-lerna-release-2.0.2.tgz#70c899f4430fc1fb6d14c93c118c22c8b6378b89"
+  integrity sha512-lCw0AYoQ6xrelIhfchN4nvN9zXsXttukyHuDIFMe2fqBuJO/8qvJylXv4Fs6O2Eyz4DjZfxdIsIE/B5kbkGo7A==
+  dependencies:
+    lerna "3.20.2"
+
+spire-plugin-lerna-release@^1.4.0:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/spire-plugin-lerna-release/-/spire-plugin-lerna-release-1.8.2.tgz#1613e6cde022cded4b2d1286b7819aeedb1151b2"
   integrity sha512-BqahKrWweBUNrBX+YpAc6plom5drSxdl4T+EfeDDAtNzA9PH+6eWmv2RD23rCHr8o1FzD6fSHEGqZZOknGtp8A==
