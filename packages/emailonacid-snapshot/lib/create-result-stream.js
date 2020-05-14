@@ -5,6 +5,9 @@ const { fetch } = require('cross-fetch');
 const Jimp = require('jimp');
 const SCREENSHOT_FETCH_RETRIES = 3;
 
+const POLL_RETRIES = +(process.env.EOA_POLL_RETRIES || 5);
+const POLL_RETRY_BACKOFF = +(process.env.EOA_POLL_RETRY_BACKOFF || 2.61);
+
 class ResultStream extends Readable {
   constructor(context, options) {
     super({ objectMode: true });
@@ -25,22 +28,20 @@ class ResultStream extends Readable {
     logger.debug('polling started');
     try {
       // Track EoA-side timings
-      options.clients.forEach((clientId) =>
-        logger.time(`response:${clientId}`)
-      );
+      options.clients.forEach(clientId => logger.time(`response:${clientId}`));
       // Delay initial request
       await this.delayBeforeNext(true);
       // Avoid dead-locks
       await Promise.race([this.poll(), this.rejectAfterTimeout()]);
-    } catch (reason) {
-      logger.error(reason);
-      throw reason;
-    } finally {
       // Mark stream completed
       this.push(null);
+    } catch (reason) {
+      logger.error(reason);
+      this.destroy(reason);
+    } finally {
       const elapsed = Math.round((Date.now() - startedAt) / 1000);
       logger.debug('polling complete');
-      logger.debug('test %s is ready in total %s seconds', test.id, elapsed);
+      logger.debug('test %s is ready after %ss', test.id, elapsed);
     }
   }
 
@@ -50,9 +51,7 @@ class ResultStream extends Readable {
     if (aborted) return;
     // Process the result only if some progress is received
     const status = await client.getTest(test.id);
-    const progressed = Boolean(
-      status.completed.find((clientId) => !this.completed.has(clientId))
-    );
+    const progressed = Boolean(status.completed.find(clientId => !this.completed.has(clientId)));
     if (progressed) await this.progress(status);
     // Exit if all clients are ready
     if (options.clients.length === status.completed.length) return;
@@ -72,21 +71,16 @@ class ResultStream extends Readable {
     if (!status.completed.length) return;
     const results = await client.getResults(test.id);
     await Promise.all(
-      status.completed.map(async (clientId) => {
+      status.completed.map(async clientId => {
         // Skip completed clients
         if (this.completed.has(clientId)) return;
-        const result = results.find((entry) => entry.id === clientId);
+        const result = results.find(entry => entry.id === clientId);
         const screenshotUrl = result.screenshots.default;
         const { submitted, completed } = result.statusDetails;
         const elapsed = Math.round((completed - submitted) / 1000);
         const attempts = result.statusDetails.attempts;
         logger.timeEnd(`response:${clientId}`);
-        logger.debug(
-          '%s is ready in %ss with %s attempts',
-          clientId,
-          elapsed,
-          attempts
-        );
+        logger.debug('%s is ready after %ss (%s attempts)', clientId, elapsed, attempts);
         logger.debug('fetching %s', screenshotUrl);
         // Remember the result to avoid double processing
         const image = await this.fetchScreenshot(screenshotUrl);
@@ -101,7 +95,7 @@ class ResultStream extends Readable {
       setTimeout(() => {
         const timeout = this.options.poll.timeout / 1000;
         const timeoutedClients = this.options.clients.filter(
-          (clientId) => !this.completed.has(clientId)
+          clientId => !this.completed.has(clientId)
         );
         const error = new Error();
         error.message = `Polling timeout of ${timeoutedClients} after ${timeout}s`;
@@ -120,21 +114,17 @@ class ResultStream extends Readable {
         Math.round(this.backOffInterval / 1000)
       );
     }
-    await new Promise((resolve) => setTimeout(resolve, this.backOffInterval));
+    await new Promise(resolve => setTimeout(resolve, this.backOffInterval));
   }
 
   async stopPolling() {
     this.aborted = true;
-    await new Promise((resolve) => setImmediate(resolve));
+    await new Promise(resolve => setImmediate(resolve));
     this.destroy();
-    await new Promise((resolve) => setImmediate(resolve));
+    await new Promise(resolve => setImmediate(resolve));
   }
 
-  async fetchScreenshot(
-    screenshotUrl,
-    retriesLeft = SCREENSHOT_FETCH_RETRIES,
-    lastError = null
-  ) {
+  async fetchScreenshot(screenshotUrl, retriesLeft = SCREENSHOT_FETCH_RETRIES, lastError = null) {
     if (retriesLeft === 0) {
       throw new Error(
         `Failed to fetch ${screenshotUrl} after ${SCREENSHOT_FETCH_RETRIES} attempts: ${lastError}`

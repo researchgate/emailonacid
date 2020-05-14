@@ -14,6 +14,7 @@ function getConfigDefaults() {
       plugins: [],
       server: process.env.EOA_SERVER_ADDRESS,
       poll: { interval: 5e3, timeout: 120e3 },
+      retry: false,
     })
   );
 }

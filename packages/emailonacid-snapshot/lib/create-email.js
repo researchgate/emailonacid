@@ -13,21 +13,11 @@ function configureCreateEmail(configuredOptions = {}) {
   // Merge all given options, but replace list of clients instead of concat
   const defaultOptions = getConfigDefaults();
   const globalOptions = getConfig();
-  const customMerge = (_, right, key) =>
-    ['clients', 'plugins'].includes(key) ? right : undefined;
-  const options = mergeWith(
-    {},
-    defaultOptions,
-    globalOptions,
-    configuredOptions,
-    customMerge
-  );
+  const customMerge = (_, right, key) => (['clients', 'plugins'].includes(key) ? right : undefined);
+  const options = mergeWith({}, defaultOptions, globalOptions, configuredOptions, customMerge);
   const logger = createLogger(options);
   logger.debug('using clients %s', options.clients.join(', '));
-  logger.debug(
-    'using plugins %s',
-    options.plugins.map((plugin) => plugin.name).join(', ')
-  );
+  logger.debug('using plugins %s', options.plugins.map(plugin => plugin.name).join(', '));
   let client;
 
   return async function createEmail(content, subject = 'Mail Snapshot') {
@@ -86,27 +76,55 @@ function configureCreateEmail(configuredOptions = {}) {
     context.stream = createResultStream(context, options);
     // eslint-disable-next-line require-atomic-updates
     context.stopPolling = context.stream.stopPolling.bind(context.stream);
-    // Track complete result timings
-    options.clients.forEach((clientId) =>
-      logger.time(`screenshot:${clientId}`)
-    );
+
     // Run `process` plugins
     for (const plugin of options.plugins) {
       if (plugin.convert) {
         await plugin.convert(context);
       }
     }
-    // Convert stream to a map of promises
-    const results = options.clients.reduce((map, clientId) => {
-      return map.set(
-        clientId,
-        new Promise((resolve) => {
-          context.stream.on('data', ([receivedClientId, image]) => {
-            if (clientId === receivedClientId) resolve(image);
-          });
-        })
-      );
-    }, new Map());
+
+    const completedClients = new Set();
+
+    const results = new Map(
+      options.clients.map(id => [id, consumeStreamForClient(context.stream, id)])
+    );
+
+    async function consumeStreamForClient(stream, clientId) {
+      const d = createDeferred();
+
+      logger.time(`screenshot:${clientId}`);
+
+      stream.on('data', ([receivedClientId, image]) => {
+        if (clientId !== receivedClientId) return;
+        image.getBufferAsync(Jimp.MIME_PNG).then(d.resolve, d.reject);
+      });
+
+      stream.on('error', d.reject);
+
+      try {
+        return await d.promise;
+      } finally {
+        completedClients.add(clientId);
+        logger.timeEnd(`screenshot:${clientId}`);
+      }
+    }
+
+    function retryForClient(clientId) {
+      logger.debug(`Retrying for ${clientId}`);
+
+      const ownContext = {
+        ...context,
+        options: {
+          ...context.options,
+          clients: [clientId],
+        },
+      };
+
+      const stream = createResultStream(ownContext, options);
+      return consumeStreamForClient(stream, clientId);
+    }
+
     logger.timeEnd('create');
 
     return {
@@ -122,16 +140,15 @@ function configureCreateEmail(configuredOptions = {}) {
       get content() {
         return context.email.content;
       },
-      async screenshot(clientId) {
+      screenshot(clientId) {
         invariant(
           options.clients.includes(clientId),
           '`.screenshot()` is called for an unavailable client %s',
           clientId
         );
-        const image = await results.get(clientId);
-        const result = await image.getBufferAsync(Jimp.MIME_PNG);
-        logger.timeEnd(`screenshot:${clientId}`);
-        return result;
+        return options.retry && completedClients.has(clientId)
+          ? retryForClient(clientId)
+          : results.get(clientId);
       },
       async clean() {
         logger.time('clean');
@@ -141,6 +158,17 @@ function configureCreateEmail(configuredOptions = {}) {
       },
     };
   };
+}
+
+function createDeferred() {
+  const d = {};
+
+  d.promise = new Promise((resolve, reject) => {
+    d.resolve = resolve;
+    d.reject = reject;
+  });
+
+  return d;
 }
 
 module.exports = configureCreateEmail;
