@@ -3,7 +3,6 @@
 const { Readable } = require('stream');
 const { fetch } = require('cross-fetch');
 const Jimp = require('jimp');
-const COMPLETED_TIMESTAMP_HOURS_SHIFT = -7;
 const SCREENSHOT_FETCH_RETRIES = 3;
 
 class ResultStream extends Readable {
@@ -79,10 +78,6 @@ class ResultStream extends Readable {
         const result = results.find((entry) => entry.id === clientId);
         const screenshotUrl = result.screenshots.default;
         const { submitted, completed } = result.statusDetails;
-        // Fix EoA's bizzare timestamp shift
-        completed.setHours(
-          completed.getHours() + COMPLETED_TIMESTAMP_HOURS_SHIFT
-        );
         const elapsed = Math.round((completed - submitted) / 1000);
         const attempts = result.statusDetails.attempts;
         logger.timeEnd(`response:${clientId}`);
