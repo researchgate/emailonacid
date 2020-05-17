@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@researchgate/emailonacid-emulator": "^4.0.4",
-    "jest": "25.5.4"
+    "jest": "26.0.1"
   },
   "peerDependencies": {
     "jest": ">=22"
