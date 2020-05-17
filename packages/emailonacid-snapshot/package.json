@@ -26,7 +26,7 @@
     "cosmiconfig": "^6.0.0",
     "cross-fetch": "^3.0.4",
     "invariant": "^2.2.4",
-    "jimp": "^0.10.0",
+    "jimp": "^0.12.0",
     "lodash.kebabcase": "^4.1.1",
     "lodash.mergewith": "^4.6.2",
     "signale": "^1.4.0"
