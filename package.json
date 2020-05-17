@@ -14,13 +14,12 @@
   "devDependencies": {
     "@researchgate/spire-config": "4.0.3",
     "@types/jest": "25.2.2",
-    "jest": "25.5.4",
     "jest-image-snapshot": "4.0.0",
     "spire": "2.1.4",
     "spire-plugin-lerna-release": "2.1.6"
   },
   "jest": {
-    "preset": "@researchgate/jest-preset",
+    "preset": "@researchgate/jest-preset-base",
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "<rootDir>/.setup.jest.js"
