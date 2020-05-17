@@ -32,8 +32,7 @@
     "signale": "^1.4.0"
   },
   "devDependencies": {
-    "@researchgate/emailonacid-emulator": "^4.0.4",
-    "jest": "26.0.1"
+    "@researchgate/emailonacid-emulator": "^4.0.4"
   },
   "peerDependencies": {
     "jest": ">=22"
