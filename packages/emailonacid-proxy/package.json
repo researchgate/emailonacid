@@ -10,8 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "async-sema": "^3.0.0",
-    "commander": "^4.0.0",
     "cross-fetch": "^3.0.1",
-    "micro": "^9.3.3"
+    "micro": "^9.3.3",
+    "yargs": "^15.3.1"
   }
 }
