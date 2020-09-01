@@ -6,10 +6,8 @@
   "types": "types/emailonacid-client.d.ts",
   "files": [
     "index.js",
-    "targets.js",
     "lib/",
-    "types/",
-    "readme.md"
+    "types/"
   ],
   "author": "Sergey Bekrin <sergey@bekrin.me>",
   "license": "MIT",

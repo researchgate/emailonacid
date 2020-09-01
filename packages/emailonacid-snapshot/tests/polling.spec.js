@@ -1,6 +1,3 @@
-// @ts-check
-'use strict';
-
 const { join, relative } = require('path');
 const {
   createEmulator,
