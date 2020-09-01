@@ -1,8 +1,5 @@
-/* eslint-env jest */
-'use strict';
-
 const fetch = require('cross-fetch');
-const createClient = require('.');
+const createClient = require('..');
 const clientDefaults = {
   baseApiUrl: 'http://example.com',
   accountPassword: 'bar',

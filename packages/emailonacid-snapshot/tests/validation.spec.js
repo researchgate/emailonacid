@@ -1,7 +1,3 @@
-// @ts-check
-/* eslint-env jest */
-'use strict';
-
 const {
   createEmulator,
 } = require('@researchgate/emailonacid-emulator/standalone');

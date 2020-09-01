@@ -1,7 +1,4 @@
-/* eslint-env jest */
-'use strict';
-
-const unixToDate = require('./unix-to-date');
+const unixToDate = require('../unix-to-date');
 
 describe('unixToDate', () => {
   it('uses current date if no timestamp is provided', () => {
