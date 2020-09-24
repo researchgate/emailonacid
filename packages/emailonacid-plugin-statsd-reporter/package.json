@@ -8,6 +8,6 @@
     "node": ">=10"
   },
   "dependencies": {
-    "hot-shots": "^7.0.0"
+    "hot-shots": "^8.0.0"
   }
 }
