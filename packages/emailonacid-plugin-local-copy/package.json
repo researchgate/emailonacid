@@ -8,7 +8,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "execa": "^4.0.0",
+    "execa": "^5.0.0",
     "sendmail": "^1.4.1"
   }
 }
