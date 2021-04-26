@@ -9385,10 +9385,10 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
   integrity sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw==
 
-snakecase-keys@^3.1.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/snakecase-keys/-/snakecase-keys-3.2.1.tgz#ce5d1a2de8a93c939d7992f76f2743aa59f3d5ad"
-  integrity sha512-CjU5pyRfwOtaOITYv5C8DzpZ8XA/ieRsDpr93HI2r6e3YInC6moZpSQbmUtg8cTk58tq2x3jcG2gv+p1IZGmMA==
+snakecase-keys@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/snakecase-keys/-/snakecase-keys-4.0.1.tgz#1ba511be38226a2a1d54bb433666bc127458eeed"
+  integrity sha512-oZsXfKe9oe/Cb7EEReYtYfWM+2kR67Vt0yYNjckh1PsEoP/zDoezPN6GLtDba7EBGujGw5vl/h5se/RiBdWUKA==
   dependencies:
     map-obj "^4.1.0"
     to-snake-case "^1.0.0"
