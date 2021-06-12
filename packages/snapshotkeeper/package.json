@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "aggregate-error": "^3.0.0",
+    "aggregate-error": "^4.0.0",
     "cosmiconfig": "^7.0.0",
     "execa": "^5.0.0",
     "is-ci": "^2.0.0",
