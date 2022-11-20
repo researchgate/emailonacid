@@ -19,7 +19,7 @@
     "wait-for-localhost": "^3.0.0"
   },
   "devDependencies": {
-    "lerna": "3.22.1",
+    "lerna": "6.0.3",
     "micro-dev": "3.0.0",
     "wait-for-localhost": "3.3.0"
   }
