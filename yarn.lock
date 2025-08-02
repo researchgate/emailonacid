@@ -10638,10 +10638,10 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
-wait-for-localhost@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/wait-for-localhost/-/wait-for-localhost-3.3.0.tgz#aa3df1aeb7067a29630683a42e06515d18006061"
-  integrity sha512-/9FDq1qaRXfFwVpRSDiybxHSt6TakGscBqyhO3tsPB1ToRVyjOXVSI2IvW1T04MqM2Mq3a+6J8PdzAlscrCQzg==
+wait-for-localhost@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/wait-for-localhost/-/wait-for-localhost-4.1.0.tgz#8d9b2c049fa36da8093b3d0a7c60f32458cf6ddc"
+  integrity sha512-i3yX7qgAnxFXWOS6Om7SNi19HRygFvCGh0iy0nOsrYOSiIlhUqoUuzLoW4jHVYS4dzNGzRU100uwTyluOMWcjw==
 
 walker@^1.0.7, walker@~1.0.5:
   version "1.0.7"
